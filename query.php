@@ -46,8 +46,8 @@ $hdr='<tr><td>S_ID </td><td> C_SEC_ID </td><td>GRA</td></tr>';
 $qry = 'select * from enrollment';
 get_enrollm($hdr,$qry );
 //=============
-$hdr='<tr><td>COURSE_ID </td><td> CALL_ID </td><td><a href="#" onclick="javascript:alert(\'Testing 123\')">COURSE_NAME</a></td> <td>CREDITS</td><td></td></tr>';
-$qry = 'select * from www.course';
+$hdr='<tr><td>COURSE_ID </td><td> CALL_ID </td><td><a href="#" onclick="javascript:alert(\'Testing 123\')">COURSE_NAME</a></td> <td>CREDITS</td><td>SCHOOL</td></tr>';
+$qry = 'select * from www.course order by course_id asc';
 get_enrollm($hdr,$qry );
 //$hdr='<tr><td>S_ID </td><td> C_SEC_ID </td><td>GRA</td></tr>';
 //$qry = "update www.enrollment set grade='A' where c_sec_id=1011";
